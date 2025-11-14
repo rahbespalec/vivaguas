@@ -120,6 +120,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     transition: var(--transition);
     color: var(--dark-green);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .cart-btn:hover,
@@ -158,6 +163,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .hamburger span {
@@ -166,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--primary-green);
     border-radius: 3px;
     transition: var(--transition);
+    pointer-events: none;
 }
 
 /* Hero Section */
@@ -245,6 +255,10 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .btn-primary {

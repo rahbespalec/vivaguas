@@ -79,15 +79,30 @@ window.onclick = function(event) {
 
 // ==================== AUTENTICAÇÃO ====================
 
-document.getElementById('userBtn').addEventListener('click', (e) => {
+let userBtnTouchHandled = false;
+
+const handleUserBtn = (e) => {
+    if (e.type === 'touchend') {
+        userBtnTouchHandled = true;
+    }
+    if (e.type === 'click' && userBtnTouchHandled) {
+        userBtnTouchHandled = false;
+        return;
+    }
+    
     e.preventDefault();
+    e.stopPropagation();
+    
     if (currentUser) {
         openModal('profileModal');
         updateProfileDisplay();
     } else {
         openModal('loginModal');
     }
-});
+};
+
+document.getElementById('userBtn').addEventListener('touchend', handleUserBtn);
+document.getElementById('userBtn').addEventListener('click', handleUserBtn);
 
 document.getElementById('loginForm').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -251,11 +266,25 @@ document.getElementById('confirmAddCart').addEventListener('click', () => {
 
 // ==================== CARRINHO ====================
 
-document.getElementById('cartBtn').addEventListener('click', (e) => {
+let cartBtnTouchHandled = false;
+
+const handleCartBtn = (e) => {
+    if (e.type === 'touchend') {
+        cartBtnTouchHandled = true;
+    }
+    if (e.type === 'click' && cartBtnTouchHandled) {
+        cartBtnTouchHandled = false;
+        return;
+    }
+    
     e.preventDefault();
+    e.stopPropagation();
     openModal('cartModal');
     updateCartDisplay();
-});
+};
+
+document.getElementById('cartBtn').addEventListener('touchend', handleCartBtn);
+document.getElementById('cartBtn').addEventListener('click', handleCartBtn);
 
 function updateCartCount() {
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -647,19 +676,35 @@ const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-menu a');
 
 if (hamburger && navMenu) {
-    hamburger.addEventListener('click', (e) => {
+    let touchHandled = false;
+    
+    const toggleMenu = (e) => {
+        if (e.type === 'touchend') {
+            touchHandled = true;
+        }
+        if (e.type === 'click' && touchHandled) {
+            touchHandled = false;
+            return;
+        }
+        
         e.preventDefault();
         e.stopPropagation();
         navMenu.classList.toggle('active');
         hamburger.classList.toggle('active');
-    });
+    };
+    
+    hamburger.addEventListener('touchend', toggleMenu);
+    hamburger.addEventListener('click', toggleMenu);
 }
 
 navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    const closeMenu = () => {
         navMenu.classList.remove('active');
         hamburger.classList.remove('active');
-    });
+    };
+    
+    link.addEventListener('click', closeMenu);
+    link.addEventListener('touchend', closeMenu);
 });
 
 window.addEventListener('scroll', () => {
