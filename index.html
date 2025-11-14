@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivÁguas - Hortaliças Hidropônicas Sustentáveis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>VivÁguas</h1>
+                    <span class="tagline">Hidroponia Sustentável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="nav-user">
+                        <a href="#" class="user-btn" id="userBtn">
+                            <i class="fas fa-user"></i>
+                            <span id="userNameDisplay">Entrar</span>
+                        </a>
+                    </li>
+                    <li class="nav-cart">
+                        <a href="#" class="cart-btn" id="cartBtn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Conectando você à natureza com cada gota d'água</h2>
+            <p class="hero-subtitle">Hortaliças hidropônicas frescas, sem agrotóxicos e com 90% de economia de água</p>
+            <div class="hero-buttons">
+                <a href="#produtos" class="btn btn-primary">Conheça nossos produtos</a>
+                <a href="#contato" class="btn btn-secondary">Fale conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bem-vindo -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h2>Bem-vindo à VivÁguas</h2>
+                <p>A VivÁguas é um microempreendimento sustentável voltado à produção de hortaliças hidropônicas, cultivadas sem agrotóxicos e com até 90% de economia de água. Produzimos alimentos frescos, nutritivos e saudáveis, com respeito ao meio ambiente e à sua mesa.</p>
+            </div>
+            <div class="welcome-stats">
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">Economia de água</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">Agrotóxicos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Sustentável</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Nossa História</h3>
+                    <p>A VivÁguas nasceu do sonho de jovens empreendedores que acreditam em uma agricultura mais limpa, moderna e acessível. Fundada em Ribeirão Pires (SP), a empresa utiliza a hidroponia como forma de produzir alimentos de qualidade, economizando água e eliminando o uso de agrotóxicos.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Missão</h3>
+                    <p>Inspirar uma vida mais saudável e sustentável, oferecendo hortaliças hidropônicas de alta qualidade, cultivadas com respeito à saúde humana e ao meio ambiente.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida regionalmente como referência em consumo saudável e sustentável.</p>
+                </div>
+            </div>
+
+            <div class="values">
+                <h3>Nossos Valores</h3>
+                <div class="values-list">
+                    <span class="value-tag">Responsabilidade</span>
+                    <span class="value-tag">Comprometimento</span>
+                    <span class="value-tag">Parceria</span>
+                    <span class="value-tag">Confiabilidade</span>
+                    <span class="value-tag">Fidelidade</span>
+                </div>
+            </div>
+
+            <div class="team">
+                <h3>Nossa Equipe</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-avatar">MA</div>
+                        <h4>Miguel Adalberto</h4>
+                        <p>Diretor Geral (CEO)</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">MW</div>
+                        <h4>Mike Willians</h4>
+                        <p>Gerente de Operações</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">SA</div>
+                        <h4>Sophya Almeida</h4>
+                        <p>Gerente Comercial</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">NA</div>
+                        <h4>Nathália Araújo</h4>
+                        <p>Analista de Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p class="section-subtitle">Hortaliças frescas, cultivadas com tecnologia e carinho</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Mais vendido</div>
+                        <img src="product-alface.jpg" alt="Alface Hidropônica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Alface Hidropônica</h3>
+                        <p>Fresca, sem agrotóxicos, com durabilidade prolongada</p>
+                        <div class="product-price">
+                            <span class="price">R$ 2,00 - R$ 3,00</span>
+                        </div>
+                        <button class="btn btn-cart">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-rucula.jpg" alt="Rúcula Hidropônica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rúcula Hidropônica</h3>
+                        <p>Sabor intenso e crocante</p>
+                        <div class="product-price">
+                            <span class="price">R$ 2,50 - R$ 3,50</span>
+                        </div>
+                        <button class="btn btn-cart">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-salsinha.jpg" alt="Salsinha Hidropônica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Salsinha Hidropônica</h3>
+                        <p>Aroma e frescor garantidos</p>
+                        <div class="product-price">
+                            <span class="price">R$ 2,00</span>
+                        </div>
+                        <button class="btn btn-cart">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-cebolinha.jpg" alt="Cebolinha Hidropônica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cebolinha Hidropônica</h3>
+                        <p>Fresca, ideal para temperos</p>
+                        <div class="product-price">
+                            <span class="price">R$ 2,00</span>
+                        </div>
+                        <button class="btn btn-cart">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-info">
+                <h3>Formas de Pagamento</h3>
+                <div class="payment-methods">
+                    <span class="payment-tag"><i class="fas fa-qrcode"></i> Pix</span>
+                    <span class="payment-tag"><i class="fas fa-money-bill-wave"></i> Dinheiro</span>
+                    <span class="payment-tag"><i class="fas fa-exchange-alt"></i> Transferência</span>
+                    <span class="payment-tag"><i class="fas fa-barcode"></i> Boleto</span>
+                </div>
+                <p class="delivery-info"><i class="fas fa-truck"></i> Entrega em Ribeirão Pires e região | Retirada na estufa disponível</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Produção e Venda</h3>
+                    <p>Hortaliças hidropônicas frescas e de qualidade, direto da estufa para sua mesa.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Parcerias</h3>
+                    <p>Fornecimento para restaurantes, feiras e hortifrutis da região.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Eventos e Feiras</h3>
+                    <p>Participação em eventos e feiras sustentáveis, promovendo alimentação saudável.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Educação</h3>
+                    <p>Workshops e palestras sobre cultivo sustentável e agricultura urbana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustentabilidade ESG -->
+    <section id="sustentabilidade" class="sustainability">
+        <div class="container">
+            <h2 class="section-title">Compromisso com a Sustentabilidade</h2>
+            <p class="section-subtitle">Nosso compromisso ESG em ação</p>
+            
+            <div class="esg-grid">
+                <div class="esg-card">
+                    <div class="esg-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Ambiental</h3>
+                    <ul>
+                        <li>Uso racional da água com economia de até 90%</li>
+                        <li>Cultivo sem agrotóxicos</li>
+                        <li>Redução do impacto ambiental</li>
+                        <li>Economia de recursos naturais</li>
+                    </ul>
+                </div>
+                <div class="esg-card">
+                    <div class="esg-icon"><i class="fas fa-users"></i></div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li>Educação alimentar para a comunidade</li>
+                        <li>Doação de alimentos</li>
+                        <li>Incentivo à agricultura urbana</li>
+                        <li>Geração de empregos locais</li>
+                    </ul>
+                </div>
+                <div class="esg-card">
+                    <div class="esg-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Governança</h3>
+                    <ul>
+                        <li>Ética nos negócios</li>
+                        <li>Transparência com stakeholders</li>
+                        <li>Boas práticas de gestão</li>
+                        <li>Conformidade legal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ods-section">
+                <h3>Objetivos de Desenvolvimento Sustentável (ODS)</h3>
+                <p>Contribuímos ativamente para os seguintes ODS da ONU:</p>
+                <div class="ods-badges">
+                    <span class="ods-badge">ODS 2 - Fome Zero</span>
+                    <span class="ods-badge">ODS 3 - Saúde e Bem-Estar</span>
+                    <span class="ods-badge">ODS 6 - Água Potável</span>
+                    <span class="ods-badge">ODS 8 - Trabalho Decente</span>
+                    <span class="ods-badge">ODS 12 - Consumo Responsável</span>
+                    <span class="ods-badge">ODS 13 - Ação Climática</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo / Razão Social *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="documento">CPF ou CNPJ *</label>
+                            <input type="text" id="documento" name="documento" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço (opcional)</label>
+                            <input type="text" id="endereco" name="endereco">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo de Cadastro *</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="">Selecione</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="fornecedor">Fornecedor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem / Observação</label>
+                            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                            <a href="https://wa.me/5511935050278" class="btn btn-whatsapp" target="_blank">
+                                Fale pelo WhatsApp
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Maria Emília, nº 220<br>Bairro Soma – Ribeirão Pires (SP)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Telefone / WhatsApp</h4>
+                            <p>(11) 93505-0278</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@vivaguas.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <h4>Principal Parceria</h4>
+                            <p>AgroTech</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VivÁguas</h3>
+                    <p>Hidroponia sustentável para uma vida mais saudável</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Rua Maria Emília, nº 220<br>Bairro Soma – Ribeirão Pires (SP)</p>
+                    <p><i class="fas fa-phone"></i> (11) 93505-0278</p>
+                    <p><i class="fas fa-envelope"></i> contato@vivaguas.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VivÁguas – Todos os direitos reservados.</p>
+                <p>MEI / Microempresa – Simples Nacional</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeLogin">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-user-circle"></i>
+                <h2>Entrar na sua conta</h2>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Entrar</button>
+                <p class="modal-text">Não tem uma conta? <a href="#" id="showRegister">Cadastre-se</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeRegister">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-user-plus"></i>
+                <h2>Criar nova conta</h2>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Nome Completo</label>
+                    <input type="text" id="registerName" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">E-mail</label>
+                    <input type="email" id="registerEmail" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Telefone</label>
+                    <input type="tel" id="registerPhone" placeholder="(11) 93505-0278" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Senha</label>
+                    <input type="password" id="registerPassword" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Cadastrar</button>
+                <p class="modal-text">Já tem uma conta? <a href="#" id="showLogin">Faça login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Perfil -->
+    <div class="modal" id="profileModal">
+        <div class="modal-content profile-content">
+            <span class="modal-close" id="closeProfile">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-user-circle"></i>
+                <h2>Meu Perfil</h2>
+            </div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 id="profileName">Nome do Usuário</h3>
+                <p id="profileEmail">email@exemplo.com</p>
+                <p id="profilePhone">(11) 11935050278</p>
+            </div>
+            <div class="profile-actions">
+                <button class="btn btn-secondary" id="editProfileBtn">
+                    <i class="fas fa-edit"></i> Editar Perfil
+                </button>
+                <button class="btn btn-primary" id="myOrdersBtn">
+                    <i class="fas fa-box"></i> Meus Pedidos
+                </button>
+                <button class="btn btn-logout" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Carrinho -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-content">
+            <span class="modal-close" id="closeCart">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Meu Carrinho</h2>
+            </div>
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-footer" id="cartFooter" style="display: none;">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+                <button class="btn btn-primary full-width" id="checkoutBtn">
+                    <i class="fas fa-check"></i> Finalizar Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Pedidos -->
+    <div class="modal" id="ordersModal">
+        <div class="modal-content orders-content">
+            <span class="modal-close" id="closeOrders">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-box"></i>
+                <h2>Meus Pedidos</h2>
+            </div>
+            <div id="ordersList" class="orders-list">
+                <p class="no-orders">Você ainda não fez nenhum pedido</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Adicionar ao Carrinho -->
+    <div class="modal" id="addToCartModal">
+        <div class="modal-content add-cart-content">
+            <span class="modal-close" id="closeAddCart">&times;</span>
+            <div class="product-modal-header">
+                <div class="product-modal-image" id="modalProductImage">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div>
+                    <h2 id="modalProductName">Produto</h2>
+                    <p class="product-modal-price" id="modalProductPrice">R$ 0,00</p>
+                </div>
+            </div>
+            <div class="quantity-selector">
+                <label>Quantidade:</label>
+                <div class="quantity-controls">
+                    <button class="qty-btn-large" id="decreaseQty">-</button>
+                    <input type="number" id="quantityInput" value="1" min="1" max="99">
+                    <button class="qty-btn-large" id="increaseQty">+</button>
+                </div>
+            </div>
+            <div class="product-modal-total">
+                <span>Total:</span>
+                <span id="modalTotal">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary full-width" id="confirmAddCart">
+                <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal de Checkout -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content checkout-content">
+            <span class="modal-close" id="closeCheckout">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-credit-card"></i>
+                <h2>Finalizar Pedido</h2>
+            </div>
+            
+            <div class="checkout-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span>Endereço</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span>Pagamento</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span>Confirmação</span>
+                </div>
+            </div>
+
+            <!-- Step 1: Endereço -->
+            <div class="checkout-step-content" id="step1">
+                <h3>Endereço de Entrega</h3>
+                <form id="addressForm">
+                    <div class="form-group">
+                        <label for="cep">CEP *</label>
+                        <input type="text" id="cep" placeholder="00000-000" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rua">Rua *</label>
+                            <input type="text" id="rua" placeholder="Nome da rua" required>
+                        </div>
+                        <div class="form-group" style="max-width: 120px;">
+                            <label for="numero">Número *</label>
+                            <input type="text" id="numero" placeholder="123" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" placeholder="Apto, bloco, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro *</label>
+                        <input type="text" id="bairro" placeholder="Nome do bairro" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cidade">Cidade *</label>
+                            <input type="text" id="cidade" placeholder="Cidade" required>
+                        </div>
+                        <div class="form-group" style="max-width: 100px;">
+                            <label for="estado">Estado *</label>
+                            <input type="text" id="estado" placeholder="SP" required maxlength="2">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary full-width" id="nextToPayment">
+                        Continuar para Pagamento <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Step 2: Pagamento -->
+            <div class="checkout-step-content" id="step2" style="display: none;">
+                <h3>Forma de Pagamento</h3>
+                <div class="payment-methods-list">
+                    <div class="payment-option" data-method="pix">
+                        <div class="payment-icon"><i class="fas fa-qrcode"></i></div>
+                        <div class="payment-info">
+                            <h4>Pix</h4>
+                            <p>Aprovação imediata</p>
+                        </div>
+                        <i class="fas fa-check-circle payment-check"></i>
+                    </div>
+                    <div class="payment-option" data-method="cartao">
+                        <div class="payment-icon"><i class="fas fa-credit-card"></i></div>
+                        <div class="payment-info">
+                            <h4>Cartão de Crédito</h4>
+                            <p>Em até 3x sem juros</p>
+                        </div>
+                        <i class="fas fa-check-circle payment-check"></i>
+                    </div>
+                    <div class="payment-option" data-method="boleto">
+                        <div class="payment-icon"><i class="fas fa-barcode"></i></div>
+                        <div class="payment-info">
+                            <h4>Boleto Bancário</h4>
+                            <p>Vencimento em 3 dias</p>
+                        </div>
+                        <i class="fas fa-check-circle payment-check"></i>
+                    </div>
+                    <div class="payment-option" data-method="dinheiro">
+                        <div class="payment-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="payment-info">
+                            <h4>Dinheiro na Entrega</h4>
+                            <p>Pague ao receber</p>
+                        </div>
+                        <i class="fas fa-check-circle payment-check"></i>
+                    </div>
+                </div>
+                <div class="checkout-buttons">
+                    <button class="btn btn-secondary" id="backToAddress">
+                        <i class="fas fa-arrow-left"></i> Voltar
+                    </button>
+                    <button class="btn btn-primary" id="nextToConfirmation">
+                        Continuar <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Confirmação -->
+            <div class="checkout-step-content" id="step3" style="display: none;">
+                <h3>Confirmação do Pedido</h3>
+                
+                <div class="confirmation-section">
+                    <h4><i class="fas fa-map-marker-alt"></i> Endereço de Entrega</h4>
+                    <div id="confirmAddress" class="confirmation-data"></div>
+                </div>
+
+                <div class="confirmation-section">
+                    <h4><i class="fas fa-credit-card"></i> Forma de Pagamento</h4>
+                    <div id="confirmPayment" class="confirmation-data"></div>
+                </div>
+
+                <div class="confirmation-section">
+                    <h4><i class="fas fa-box"></i> Itens do Pedido</h4>
+                    <div id="confirmItems" class="confirmation-items"></div>
+                </div>
+
+                <div class="confirmation-total">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="confirmSubtotal">R$ 0,00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Entrega:</span>
+                        <span id="confirmDelivery">R$ 5,00</span>
+                    </div>
+                    <div class="total-row total-final">
+                        <span>Total:</span>
+                        <span id="confirmTotal">R$ 0,00</span>
+                    </div>
+                </div>
+
+                <div class="checkout-buttons">
+                    <button class="btn btn-secondary" id="backToPayment">
+                        <i class="fas fa-arrow-left"></i> Voltar
+                    </button>
+                    <button class="btn btn-primary" id="confirmOrder">
+                        <i class="fas fa-check"></i> Confirmar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Sucesso de Pedido -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-content">
+            <span class="modal-close" id="closeSuccess">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Pedido Realizado com Sucesso!</h2>
+            <p>Seu pedido #<span id="orderNumber"></span> foi confirmado.</p>
+            <div class="success-details">
+                <p><i class="fas fa-truck"></i> Estimativa de entrega: <strong>2 a 3 dias úteis</strong></p>
+                <p><i class="fas fa-envelope"></i> Você receberá um e-mail com os detalhes</p>
+                <p><i class="fas fa-whatsapp"></i> Entraremos em contato pelo WhatsApp</p>
+            </div>
+            <button class="btn btn-primary" id="viewOrderBtn">Ver Meu Pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
