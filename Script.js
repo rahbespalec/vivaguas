@@ -96,7 +96,7 @@ document.getElementById('loginForm').addEventListener('submit', (e) => {
     currentUser = {
         name: email.split('@')[0].charAt(0).toUpperCase() + email.split('@')[0].slice(1),
         email: email,
-        phone: '(11) 99999-9999'
+        phone: '(11) 93505-0278'
     };
     
     saveData();
@@ -162,6 +162,9 @@ function updateProfileDisplay() {
 
 document.querySelectorAll('.btn-cart').forEach(button => {
     button.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
         if (!currentUser) {
             showNotification('Faça login para adicionar produtos ao carrinho', 'warning');
             openModal('loginModal');
@@ -643,10 +646,14 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-menu a');
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-});
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+}
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {

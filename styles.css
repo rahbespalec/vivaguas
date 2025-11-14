@@ -274,11 +274,19 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--primary-green);
     color: var(--white);
     width: 100%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .btn-cart:hover {
     background: var(--dark-green);
     transform: translateY(-2px);
+}
+
+.btn-cart:active {
+    background: var(--dark-green);
+    transform: translateY(0);
 }
 
 .btn-whatsapp {
@@ -864,6 +872,15 @@ section {
     line-height: 1.6;
 }
 
+.contact-item p a {
+    color: var(--gray-dark);
+    text-decoration: none;
+}
+
+.contact-item p a:hover {
+    color: var(--primary-green);
+}
+
 .social-links {
     background: var(--white);
     padding: 1.5rem;
@@ -927,6 +944,17 @@ section {
 
 .footer-section p i {
     margin-right: 0.5rem;
+    color: var(--light-green);
+}
+
+.footer-section p a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.footer-section p a:hover {
+    opacity: 1;
     color: var(--light-green);
 }
 
@@ -1794,6 +1822,7 @@ section {
         transition: 0.3s;
         box-shadow: var(--shadow);
         padding: 2rem 0;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -1802,6 +1831,7 @@ section {
 
     .hamburger {
         display: flex;
+        z-index: 1001;
     }
 
     .hero-title {
@@ -1823,6 +1853,16 @@ section {
     /* Produtos em 2 colunas em tablets */
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Ajustar botões de formulário em mobile */
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -1846,5 +1886,40 @@ section {
     /* Produtos em 1 coluna em mobile */
     .products-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Garantir que botões funcionem em mobile */
+    .btn-cart,
+    .btn-primary,
+    .btn-secondary,
+    .btn-whatsapp {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+        cursor: pointer;
+    }
+
+    /* Melhorar espaçamento em mobile */
+    .product-card {
+        margin-bottom: 1rem;
+    }
+
+    /* Ajustar hamburguer para funcionar melhor */
+    .hamburger {
+        position: relative;
+        z-index: 1001;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    /* Menu mobile com melhor contraste */
+    .nav-menu {
+        background: var(--white);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .nav-cart,
+    .nav-user {
+        width: auto;
+        display: inline-block;
     }
 }
